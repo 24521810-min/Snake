@@ -98,6 +98,13 @@ int main()
             Moi.x = rand() % (MAXX - MINX - 1) + (MINX + 1);
             Moi.y = rand() % (MAXY - MINY - 1) + (MINY + 1);
         }
+        if (r.A[0].x <= MINX || r.A[0].x >= MAXX ||
+            r.A[0].y <= MINY || r.A[0].y >= MAXY)
+        {
+            gotoxy(0, MAXY + 2);
+            cout << "Game Over! Ran dung tuong.";
+            break;
+        }
         Sleep(300);
     }
 
