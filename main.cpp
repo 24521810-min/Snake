@@ -68,8 +68,8 @@ int main()
     char t;
 
     Point Moi;
-    Moi.x = rand() % 40 + 3;
-    Moi.y = rand() % 20 + 3;
+    Moi.x = rand() % (MAXX - MINX - 1) + (MINX + 1);
+    Moi.y = rand() % (MAXY - MINY - 1) + (MINY + 1);
 
     while (1)
     {
@@ -95,9 +95,8 @@ int main()
         {
             r.DoDai++;
 
-            // tạo mồi mới
-            Moi.x = rand() % 40 + 3;
-            Moi.y = rand() % 20 + 3;
+            Moi.x = rand() % (MAXX - MINX - 1) + (MINX + 1);
+            Moi.y = rand() % (MAXY - MINY - 1) + (MINY + 1);
         }
         Sleep(300);
     }
