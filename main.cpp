@@ -91,6 +91,14 @@ int main()
         VeKhung();
         r.Ve();
         r.DiChuyen(Huong);
+        if (r.A[0].x == Moi.x && r.A[0].y == Moi.y)
+        {
+            r.DoDai++;
+
+            // tạo mồi mới
+            Moi.x = rand() % 40 + 3;
+            Moi.y = rand() % 20 + 3;
+        }
         Sleep(300);
     }
 
