@@ -86,6 +86,8 @@ int main()
                 Huong = 1;
         }
         system("cls");
+        gotoxy(Moi.x, Moi.y);
+        cout << "*";
         VeKhung();
         r.Ve();
         r.DiChuyen(Huong);
